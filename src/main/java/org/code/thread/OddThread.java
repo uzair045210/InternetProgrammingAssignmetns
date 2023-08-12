@@ -8,8 +8,9 @@ public class OddThread extends Thread {
     }
     @Override
     public void run() {
+        int temp = 1;
         for (int i = 1; i <= m; i += 2)
-            System.out.println("OddThread: " + i);
+            temp = i;
     }
 
     @Override
